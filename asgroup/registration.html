@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <center>
+        <h1>Register for a Course</h1>
+        <form action="register.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required><br><br>
+            <input type="email" name="email" placeholder="Your Email" required><br><br>
+            <select name="course" required>
+                <option value="" selected>Select A Course</option>
+                <option value="Stock Market full training course">Stock Market full training course</option>
+                <option value="EQUITY Cash market">EQUITY Cash market</option>
+                <option value="Future & Options training course">Future & Options training course</option>
+                <option value="MCX Commodity market training">MCX Commodity market training</option>
+                <option value="Currency market Training course">Currency market Training course</option>
+                <option value="Intraday Trading strategy course">Intraday Trading strategy course</option>
+                <option value="Options Trading course">Options Trading course</option>
+                <option value="Advance Technical Analysis course">Advance Technical Analysis course</option>
+                <option value="Basic Technical analysis course">Basic Technical analysis course</option>
+                <option value="Wealth Creation course">Wealth Creation course</option>
+            </select><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Login</h2>
+    <form id="loginForm" action="database.php" method="post">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+      </div>
+
+      <!-- CAPTCHA Section -->
+      <div class="form-group" id="captcha-container" >
+        <label for="captcha">captcha</label>
+        <input type="text" id="captcha-input" placeholder="Enter CAPTCHA" >
+      </div>
+
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </form>
+    <p id="login-error-message" class="error-message"></p>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
